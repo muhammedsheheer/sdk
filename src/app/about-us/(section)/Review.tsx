@@ -21,7 +21,7 @@ const Reviews = ({}) => {
             <span className="font-birthstone text-2xl font-[400] tracking-[0.76px] text-[#C9AB81]">
               Menu
             </span>
-            <h6 className="font-sofia_sans text-center text-4xl font-[400] uppercase text-[#DCCABC] md:text-6xl">
+            <h6 className="text-center font-sofia_sans text-4xl font-[400] uppercase text-[#DCCABC] md:text-6xl">
               what’s in the menu
             </h6>
           </div>
@@ -53,11 +53,15 @@ const Reviews = ({}) => {
                         )}
                       </div>
                       <div className="flex flex-col gap-4">
+                        {/* <p className="font-cormorant line-clamp-6 text-center text-sm font-[500] uppercase text-[#FEF9F9] md:px-4 lg:leading-[120%]">
+                          {review.text.text}
+                        </p> */}
                         <p className="font-cormorant line-clamp-6 text-center text-sm font-[500] uppercase text-[#FEF9F9] md:px-4 lg:leading-[120%]">
-                          {review.text}
+                          {review.text?.text || "No review available"}
                         </p>
+
                         <p className="font-cormorant text-center text-sm font-[500] uppercase leading-[120%] text-[#FEF9F9] md:mt-4">
-                          {review.author_name}
+                          {review.authorAttribution.displayName}
                         </p>
                       </div>
                     </div>
