@@ -57,7 +57,7 @@ const Reviews = ({}) => {
                           {review.text.text}
                         </p> */}
                         <p className="font-cormorant line-clamp-6 text-center text-sm font-[500] uppercase text-[#FEF9F9] md:px-4 lg:leading-[120%]">
-                          {review.text?.text || "No review available"}
+                          {review?.text?.text}
                         </p>
 
                         <p className="font-cormorant text-center text-sm font-[500] uppercase leading-[120%] text-[#FEF9F9] md:mt-4">
